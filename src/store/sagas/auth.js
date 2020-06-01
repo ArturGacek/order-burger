@@ -32,7 +32,7 @@ export function* authUserSaga(action) {
         returnSecureToken: true
     };
     let url = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDA7z9ULT_z_6mqJDdKiduMMduP5xtWkls';
-    if (!action.isSignup) {
+    if (!action.isSignUp) {
         url = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDA7z9ULT_z_6mqJDdKiduMMduP5xtWkls'
         }
 
