@@ -6,20 +6,20 @@ export const purchaseBurgerSuccess = (id, orderData) => {
         type: actionTypes.PURCHASE_BURGER_SUCCESS,
         orderId: id,
         orderData: orderData
-    }
+    };
 };
 
-export const purchaseBurgerFail = (error) => {
+export const purchaseBurgerFail = error => {
     return {
         type: actionTypes.PURCHASE_BURGER_FAIL,
         error: error
-    }
+    };
 };
 
 export const purchaseBurgerStart = () => {
     return {
         type: actionTypes.PURCHASE_BURGER_START
-    }
+    };
 };
 
 export const purchaseBurger = (orderData, token) => {
@@ -38,20 +38,20 @@ export const purchaseBurger = (orderData, token) => {
         type: actionTypes.PURCHASE_BURGER,
         orderData: orderData,
         token: token
-    }
+    };
 };
 
 export const purchaseInit = () => {
     return {
         type: actionTypes.PURCHASE_INIT
-    }
+    };
 };
 
-export const fetchOrdersSuccess = (orders) => {
+export const fetchOrdersSuccess = orders => {
     return {
         type: actionTypes.FETCH_ORDERS_SUCCESS,
         orders: orders
-    }
+    };
 };
 
 export const fetchOrdersFail = (error) => {
@@ -72,7 +72,7 @@ export const fetchOrders = (token, userId) => {
         type: actionTypes.FETCH_ORDERS,
         token: token,
         userId: userId
-    }
+    };
     // return dispatch => {
     //     dispatch(fetchOrdersStart());
     //     const queryParams = '?auth=' + token + '&orderBy="userId"&equalTo="' + userId + '"';
